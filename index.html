@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Built by Trung Le</p>
+    <form id="survey-form" method="">
+        <fieldset>
+            <label id="name-label" for="name">Name<input id="name" type="text" placeholder="John..." required/></label>
+            <label for="email" id="email-label">Email<input id="email" type="email" placeholder="asfdasf@gmail.com" required/></label>
+            <label id="number-label" for="age">Age<input id="number" type="number" required min="10" max="100" placeholder="a number"/></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">What major are you interested into?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Data</option>
+                    <option value="2">Dev</option>
+
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your status</legend>
+            <label for="student"><input id="student" type="radio" name="status" class="inline" value="student">Student</input></label>
+            <label for="employee"><input id="employee" type="radio" name="status" class="inline" value="employee"/>Employee</label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Provide a bio:
+                <textarea id="bio"></textarea>
+            </label>
+        </fieldset>
+        <label for="truth"><input id="truth" class="inline" value="7" type="checkbox" required/>I confirm telling the truth</label>
+        <label for="terms-and-conditions">
+        <input class="inline" value="8" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
