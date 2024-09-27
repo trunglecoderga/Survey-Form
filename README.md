@@ -1,2 +1,2 @@
 # Survey-Form
-Un petit projet à me faire familier avec HTML et CSS
+Un petit projet pour se familiariser avec HTML et CSS
